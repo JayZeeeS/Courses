@@ -1,0 +1,1 @@
+("8.10" ta6le ("1f8609dd0fb19f48c8f4b4b08c1e36540e6e4962" . "be87a018bccbcf50a56e9107777e4be54eeb5f72") (collects #"2htdp" #"image.rkt") (collects #"htdp" #"bsl" #"runtime.rkt") (collects #"lang" #"htdp-beginner-reader.rkt") (collects #"lang" #"htdp-beginner.rkt") (collects #"racket" #"base.rkt") (collects #"racket" #"runtime-config.rkt"))

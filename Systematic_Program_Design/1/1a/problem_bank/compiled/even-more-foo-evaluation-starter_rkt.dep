@@ -1,0 +1,1 @@
+("8.10" ta6le ("8c82418f912187ac51aa3a442fa9a91a8be6deee" . "cd4c5feae73cd5cfa3c71b7fd5c0c8512a4e6467") (collects #"htdp" #"bsl" #"runtime.rkt") (collects #"lang" #"htdp-beginner-reader.rkt") (collects #"lang" #"htdp-beginner.rkt") (collects #"racket" #"base.rkt") (collects #"racket" #"runtime-config.rkt") (collects #"wxme" #"read.rkt"))
