@@ -1,0 +1,11 @@
+sort1 uses: Bubble Sort.
+
+How do you know?: Because it takes the longest in reverse order, while taking almost consistent time when alreasy sorted.
+
+sort2 uses: Merge sort.
+
+How do you know?: Because it consistently is the fastest when not already sorted, while still having relatively consistent times on the board, and not scaling as hard as the other two algorithms.
+
+sort3 uses: Selection Sort.
+
+How do you know?: Because it is more efficient than sort1 at low scale except for sorted, and scaling up real hard even when sorted at large scale, and still being more efficient than sort1 in reversed and random 50k.

@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block title %}Transaction History{% endblock %}
+
+{% block main %}
+<table>
+    <thead>
+        <tr>
+            <td>Bought/Sold</td>
+            <td>Symbol</td>
+            <td>Price</td>
+            <td>Amount</td>
+            <td>Date and Time</td>
+        </tr>
+    </thead>
+    <tbody>
+        {% for transaction in transactions %}
+            <tr>
+                <td>{% if transaction.transaction_type == "buy" %}Bought{% else %}Sold{% endif %}</td>
+                <td style="text-transform: uppercase">{{ transaction.symbol}}</td>
+                <td>{{ transaction.price | usd }}</td>
+                <td>{{ transaction.amount }}</td>
+                <td>{{ transaction.transaction_time}}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
+

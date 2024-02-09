@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block title %}Account Management{% endblock %}
+
+{% block main %}
+<form action="/account" method="post">
+    <div class="mb-3">
+        <input autocomplete="off" class="form-control mx-auto w-auto" id="password" name="password" required
+            placeholder="Password" type="password">
+    </div>
+    <div class="mb-3">
+        <input class="form-control mx-auto w-auto" id="new_password" name="new_password" placeholder="New password" required
+            type="password">
+    </div>
+    <div class="mb-3">
+        <input class="form-control mx-auto w-auto" id="new_password2" name="new_password2"
+            placeholder="Confirm your new password" required type="password">
+    </div>
+    <button class="btn btn-primary" type="submit">Change password</button>
+</form>
+    <div class="{{ invisible }}">
+        You have successfully changed your password
+    </div>
+{% endblock %}

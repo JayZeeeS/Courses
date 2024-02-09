@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>Shirt Customization!</title>
+        <script>
+            document.addEventListener("DOMContentLoaded", function(){
+                let input = document.querySelector("#submit")
+                input.addEventListener("click", function(event){
+                    document.querySelector("#dumb").innerHTML = "What did you expect to happen? Are you dumb?"
+                    document.querySelector("#link").innerHTML = "If you really want to proceed, expect pain!"
+
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div>
+            <h1>Are you ready to sell your soul to us, for unlimited shirt costumization?</h1>
+        </div>
+        <div>
+            <input placeholder="CC Info" type="text" style="color: black"></input>
+            <input id="submit" type="submit" value="Sell Soul"></input>
+            <div id="dumb"></div>
+            <div><a id="link" href="./nowforreal.html"></a></div>
+        </div>
+    </body>
+</html>

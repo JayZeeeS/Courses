@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Quote
+{% endblock %}
+
+{% block main %}
+<form action="/quote" method="post">
+    <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="query" name="query" placeholder="SPY"
+        type="text">
+    <button class="btn btn-primary" type="submit">Get Quote</button>
+</form>
+<table class>
+    <thead>
+        <tr>
+            <th>Symbol</th>
+            <th>Company</th>
+            <th>Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>{{ quote.symbol }}</td>
+            <td>{{ quote.name }}</td>
+            <td>{{ quote.price | usd}}</td>
+        </tr>
+    </tbody>
+
+</table>
+
+{% endblock %}
